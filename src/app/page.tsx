@@ -1,12 +1,8 @@
-import { cn } from "@/lib/utils";
-import { DotPattern } from "@/components/magicui/dot-pattern";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Header1 } from "@/components/navbar";
 import { ShinyButton } from "@/components/magicui/shiny-button";
 import { MoveRight } from "lucide-react";
 import BlurFade from "@/components/magicui/blur-fade";
 import { Logos8 } from "@/components/trusted-by-logos";
-import { TextAnimate } from "@/components/magicui/text-animate";
 
 
 const BLUR_FADE_DELAY = 0.04;
