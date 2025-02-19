@@ -77,7 +77,7 @@ export const Header1 = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="border-t flex flex-col w-full right-0 bg-background shadow-lg container gap-8 px-4">
+                <div className="border-t flex flex-col w-full right-0 bg-background shadow-lg container gap-4 p-4">
                     {navigationItems.map((item) => (
                         <div key={item.title}>
                             <div className="flex flex-col gap-2">
