@@ -9,7 +9,7 @@ const animationProps = {
   animate: { "--x": "-100%", scale: 1 },
   whileTap: { scale: 0.95 },
   transition: {
-    repeat: 0,
+    repeat: Infinity,
     repeatType: "loop",
     repeatDelay: 1,
     type: "spring",

@@ -19,7 +19,7 @@ export const Header1 = () => {
     
     const [isOpen, setOpen] = useState(false);
     return (
-        <header className="w-full z-40 fixed top-0 left-0 bg-transparent backdrop-blur-lg">
+        <header className="w-full z-40 fixed top-0 left-0 bg-transparent backdrop-blur-lg px-4">
             <div className="container relative mx-auto min-h-16 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
                 <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
                     <NavigationMenu className="flex justify-start items-start">
