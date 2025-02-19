@@ -16,18 +16,17 @@ export default function Home() {
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <BlurFade delay={BLUR_FADE_DELAY} >
-              <p className="text-4xl sm:text-7xl max-w-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+              <p className="text-4xl tracking-tighter sm:text-7xl max-w-6xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                 Brace yourselves for the future of business intelligence
               </p>
             </BlurFade>
-
             {/* <div className="flex flex-col items-center justify-center">
             <BlurFadeText delay={BLUR_FADE_DELAY} className="text-2xl md:text-4xl lg:text-6xl" text="Brace yourselves for the future of" animateByCharacter={false} />
             <BlurFadeText delay={BLUR_FADE_DELAY} className="text-2xl md:text-4xl lg:text-6xl" text=" business intelligence" animateByCharacter={false} />
           </div> */}
             <div className="flex flex-col items-center justify-center m-4">
               <BlurFade delay={BLUR_FADE_DELAY * 3} >
-                <h3 className="text-md text-white/40 whitespace-pre-wrap">
+                <h3 className="text-md text-white/40 whitespace-pre-wrap ">
                   The all-in-one ERP solution designed for businesses that demand
                   <br />
                   efficiency and scalability.</h3>
