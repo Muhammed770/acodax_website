@@ -8,7 +8,7 @@ import { Logos8 } from "@/components/trusted-by-logos";
 const BLUR_FADE_DELAY = 0.04;
 export default function Home() {
   return (
-    <div className="relative z-10 flex items-center justify-center h-screen">
+    <div className="relative z-10 flex items-center justify-center h-[100dvh]">
       <Header1 />
       <div className="h-full w-full    dark:bg-dot-white/[0.3] bg-dot-black/[0.2] relative flex items-center justify-center">
         <div className="flex-col items-center justify-center px-2">
