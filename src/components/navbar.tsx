@@ -19,8 +19,8 @@ export const Header1 = () => {
     
     const [isOpen, setOpen] = useState(false);
     return (
-        <header className="w-full z-40 fixed top-0 left-0 bg-transparent backdrop-blur-lg px-4 pt-2">
-            <div className="container relative mx-auto flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
+        <header className="w-full z-40 fixed top-0 left-0 bg-transparent backdrop-blur-lg pt-2 flex-col">
+            <div className="container relative mx-auto flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center px-4 pb-2">
                 <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
                     <NavigationMenu className="flex justify-start items-start">
                         <NavigationMenuList className="flex justify-start gap-4 flex-row">
@@ -71,33 +71,33 @@ export const Header1 = () => {
                     </Link>
                 </div>
                 <div className="flex w-12 shrink lg:hidden items-end justify-end">
-                    <Button variant="ghost" onClick={() => setOpen(!isOpen)}>
+                    <Button variant="ghost" className="rounded-full" onClick={() => setOpen(!isOpen)}>
                         {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                     </Button>
-                    {isOpen && (
-                        <div className="absolute top-20 border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
-                            {navigationItems.map((item) => (
-                                <div key={item.title}>
-                                    <div className="flex flex-col gap-2">
-                                        {item.href ? (
-                                            <Link
-                                                href={item.href}
-                                                className="flex justify-between items-center"
-                                            >
-                                                <span className="text-lg">{item.title}</span>
-                                                <MoveRight className="w-4 h-4 stroke-1 text-muted-foreground" />
-                                            </Link>
-                                        ) : (
-                                            <p className="text-lg">{item.title}</p>
-                                        )}
-                                       
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    )}
                 </div>
             </div>
+            {isOpen && (
+                <div className="border-t flex flex-col w-full right-0 bg-background shadow-lg container gap-8 px-4">
+                    {navigationItems.map((item) => (
+                        <div key={item.title}>
+                            <div className="flex flex-col gap-2">
+                                {item.href ? (
+                                    <Link
+                                        href={item.href}
+                                        className="flex justify-between items-center"
+                                    >
+                                        <span className="text-lg">{item.title}</span>
+                                        <MoveRight className="w-4 h-4 stroke-1 text-muted-foreground" />
+                                    </Link>
+                                ) : (
+                                    <p className="text-lg">{item.title}</p>
+                                )}
+
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            )}
         </header>
     );
 };
