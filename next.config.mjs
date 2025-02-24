@@ -8,6 +8,18 @@ const nextConfig = {
                 port: "",
                 pathname: "**",
             },
+            {
+                protocol: "https",
+                hostname: "cdn.dribbble.com",
+                port: "",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "i.pinimg.com",
+                port: "",
+                pathname: "**",
+            },
         ],
     },
 };

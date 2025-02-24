@@ -13,19 +13,19 @@ const features = [
     step: 'Step 1',
     title: 'Streamline Your Operations',
     content: 'Enhance efficiency with Acodax ERP by automating core business processes, from finance to supply chain management.',
-    image: 'https://images.unsplash.com/photo-1723958929247-ef054b525153?q=80&w=2070&auto=format&fit=crop'
+    image: '/psychediliabook.gif'
   },
   {
     step: 'Step 2',
     title: 'Gain Real-Time Insights',
     content: 'Leverage powerful analytics and reporting tools to make data-driven decisions that propel your business forward.',
-    image: 'https://images.unsplash.com/photo-1723931464622-b7df7c71e380?q=80&w=2070&auto=format&fit=crop'
+    image: '/CHART_ANALYTICS.jpg'
   },
   {
     step: 'Step 3',
     title: 'Scale with Confidence',
     content: 'Optimize resource planning, improve collaboration, and scale seamlessly with Acodax ERP’s robust and flexible architecture.',
-    image: 'https://images.unsplash.com/photo-1725961476494-efa87ae3106a?q=80&w=2070&auto=format&fit=crop'
+    image: '/SCALE_WC.png'
   },
 ]
 
